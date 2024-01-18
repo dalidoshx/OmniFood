@@ -2,178 +2,376 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link href="style.css" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>The Basic Language of the Web: HTML</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Lisbon Chair Shop</title>
   </head>
-
   <body>
-    <!--
-    <h1>The Basic Language of the Web: HTML</h1>
-    <h2>The Basic Language of the Web: HTML</h2>
-    <h3>The Basic Language of the Web: HTML</h3>
-    <h4>The Basic Language of the Web: HTML</h4>
-    <h5>The Basic Language of the Web: HTML</h5>
-    <h6>The Basic Language of the Web: HTML</h6>
-    -->
-
     <div class="container">
-      <header class="main-header clearfix">
-        <h1>📘 The Code Magazine</h1>
-
-        <nav>
-          <!-- <strong>This is the navigation</strong> -->
-          <a href="blog.html">Blog</a>
-          <a href="#">Challenges</a>
-          <a href="flexbox.html">Flexbox</a>
-          <a href="css-grid.html">CSS Grid</a>
-        </nav>
-
-        <!-- <div class="clear"></div> -->
+      <header>
+        <div class="header-text-box">
+          <h1>We design and build better chairs, for a better life</h1>
+          <p class="header-text">
+            In a small shop in the heart of Lisbon, we spend our days
+            relentlessly perfecting the chair. The result is a perfect blend of
+            beauty and comfort, that will have a lasting impact on your health.
+          </p>
+          <a class="btn btn--big" href="#">Shop chairs</a>
+        </div>
+        <img src="hero.jpg" alt="Photo" />
       </header>
 
-      <!-- ONLY NECESSARY FOR FLEXBOX -->
-      <!-- <div class="row"> -->
-      <article>
-        <header class="post-header">
-          <h2>The Basic Language of the Web: HTML</h2>
-
-          <div class="author-box">
-            <img
-              src="img/laura-jones.jpg"
-              alt="Headshot of Laura Jones"
-              height="50"
-              width="50"
-              class="author-img"
-            />
-
-            <p id="author" class="author">
-              Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+      <section>
+        <h2>What makes our chairs special</h2>
+        <div class="grid-3-cols">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="features-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+              />
+            </svg>
+            <p class="features-title"><strong>Science meets design</strong></p>
+            <p class="features-text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
+              similique adipisci praesentium.
             </p>
           </div>
 
-          <img
-            src="img/post-img.jpg"
-            alt="HTML code on a screen"
-            width="500"
-            height="200"
-            class="post-img"
-          />
-          <button>❤️ Like</button>
-        </header>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="features-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <p class="features-title">
+              <strong>Maximal comfort</strong>
+            </p>
+            <p class="features-text">
+              Reprehenderit optio placeat quasi excepturi architecto, explicabo
+              facilis perspiciatis error maxime magnam.
+            </p>
+          </div>
 
-        <p>
-          All modern websites and web applications are built using three
-          <em>fundamental</em>
-          technologies: HTML, CSS and JavaScript. These are the languages of the
-          web.
-        </p>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="features-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              />
+            </svg>
+            <p class="features-title">
+              <strong>Ethical and sustainable</strong>
+            </p>
+            <p class="features-text">
+              Deleniti recusandae quidem nesciunt, eos dolorum iure, quaerat
+              omnis est laudantium voluptatem voluptas!
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <p>
-          In this post, let's focus on HTML. We will learn what HTML is all
-          about, and why you too should learn it.
-        </p>
+      <section class="testimonial-section">
+        <div class="grid-3-cols">
+          <img src="customers.jpg" alt="People sitting on chairs" />
+          <div class="testimonial-box">
+            <h2>"We couldn't live without these chairs anymore"</h2>
+            <blockquote class="testimonial-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+              repellat at, nesciunt quia cum minima ipsum culpa totam sapiente
+              recusandae earum debitis doloribus in quasi voluptatibus!
+            </blockquote>
+            <p class="testimonial-author">&mdash; Mary and Sarah Johnson</p>
+          </div>
+        </div>
+      </section>
 
-        <h3>What is HTML?</h3>
-        <p>
-          HTML stands for <strong>H</strong>yper<strong>T</strong>ext
-          <strong>M</strong>arkup <strong>L</strong>anguage. It's a markup
-          language that web developers use to structure and describe the content
-          of a webpage (not a programming language).
-        </p>
-        <p>
-          HTML consists of elements that describe different types of content:
-          paragraphs, links, headings, images, video, etc. Web browsers
-          understand HTML and render HTML code as websites.
-        </p>
-        <p>In HTML, each element is made up of 3 parts:</p>
-
-        <ol>
-          <li class="first-li">The opening tag</li>
-          <li>The closing tag</li>
-          <li>The actual element</li>
-        </ol>
-
-        <p>
-          You can learn more at
-          <a
-            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-            target="_blank"
-            >MDN Web Docs</a
-          >.
-        </p>
-
-        <h3>Why should you learn HTML?</h3>
-
-        <p>
-          There are countless reasons for learning the fundamental language of
-          the web. Here are 5 of them:
-        </p>
-
-        <ul>
-          <li class="first-li">
-            To be able to use the fundamental web dev language
-          </li>
-          <li>
-            To hand-craft beautiful websites instead of relying on tools like
-            Worpress or Wix
-          </li>
-          <li>To build web applications</li>
-          <li>To impress friends</li>
-          <li>To have fun 😃</li>
-        </ul>
-
-        <p>Hopefully you learned something new here. See you next time!</p>
-      </article>
-
-      <aside>
-        <h4>Related posts</h4>
-
-        <ul class="related">
-          <li class="related-post">
-            <img
-              src="img/related-1.jpg"
-              alt="Person programming"
-              width="75"
-              height="75"
-            />
-            <div>
-              <a href="#" class="related-link">How to Learn Web Development</a>
-              <p class="related-author">By Jonas Schmedtmann</p>
+      <section>
+        <h2>Our bestselling chairs</h2>
+        <div class="grid-3-cols">
+          <figure class="chair">
+            <img src="chair-1.jpg" alt="Chair" />
+            <div class="chair-box">
+              <h3>The Laid Back</h3>
+              <ul class="chair-details">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                    />
+                  </svg>
+                  <!-- Span is a generic INLINE text element, it doesn't have any meaning. It's like a div element, but inline -->
+                  <span>Leisure and relaxing</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Comfortable for 4h</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Vegan leather</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                    />
+                  </svg>
+                  <span>Weighs 16 kg</span>
+                </li>
+              </ul>
+              <div class="chair-price">
+                <strong>250€</strong>
+                <a href="#" class="btn btn--small">Add to cart</a>
+              </div>
             </div>
-          </li>
-          <li class="related-post">
-            <img
-              src="img/related-2.jpg"
-              alt="Lightning"
-              width="75"
-              height="75"
-            />
-            <div>
-              <a href="#" class="related-link">The Unknown Powers of CSS</a>
-              <p class="related-author">By Jim Dillon</p>
+          </figure>
+
+          <figure class="chair">
+            <img src="chair-2.jpg" alt="Chair" />
+            <div class="chair-box">
+              <h3>The Worker Bee</h3>
+              <ul class="chair-details">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                    />
+                  </svg>
+                  <span>Work</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Comfortable for 8h</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Vegan leather</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                    />
+                  </svg>
+                  <span>Weighs 22 kg</span>
+                </li>
+              </ul>
+              <div class="chair-price">
+                <strong>525€</strong>
+                <a href="#" class="btn btn--small">Add to cart</a>
+              </div>
             </div>
-          </li>
-          <li class="related-post">
-            <img
-              src="img/related-3.jpg"
-              alt="JavaScript code on a screen"
-              width="75"
-              height="75"
-            />
-            <div>
-              <a href="#" class="related-link">Why JavaScript is Awesome</a>
-              <p class="related-author">By Matilda</p>
+          </figure>
+
+          <figure class="chair">
+            <img src="chair-3.jpg" alt="Chair" />
+            <div class="chair-box">
+              <h3>The Chair 4/2</h3>
+              <ul class="chair-details">
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                    />
+                  </svg>
+                  <span>Leisure and relaxing</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Comfortable all day!</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Organic cotton</span>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="chair-icon"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
+                    />
+                  </svg>
+                  <span>Weighs 80 kg</span>
+                </li>
+              </ul>
+              <div class="chair-price">
+                <strong>1450€</strong>
+                <a href="#" class="btn btn--small">Add to cart</a>
+              </div>
             </div>
-          </li>
-        </ul>
-      </aside>
-      <!-- </div> -->
+          </figure>
+        </div>
+      </section>
 
       <footer>
-        <p id="copyright" class="copyright text">
-          Copyright &copy; 2027 by The Code Magazine.
-        </p>
+        Copyright &copy; 2027 by Jonas Schmedtmann. Part of "Build Responsive
+        Real-World Websites with HTML and CSS" online course. Use for learning
+        purposes only.
       </footer>
     </div>
   </body>
